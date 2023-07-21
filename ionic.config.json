@@ -1,0 +1,7 @@
+{
+  "name": "webFormsApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
