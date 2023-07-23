@@ -2,20 +2,18 @@ import { IonicModule } from '@ionic/angular';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { eliminarPage } from './eliminar.page';
 
-import { TabsPageRoutingModule } from './tabs-routing.module';
 
-import { TabsPage } from './tabs.page';
-import { RouterModule } from '@angular/router';
+import { eliminarPageRoutingModule } from './eliminar-routing.module';
 
 @NgModule({
   imports: [
     IonicModule,
     CommonModule,
     FormsModule,
-    TabsPageRoutingModule,
-    RouterModule
+    eliminarPageRoutingModule
   ],
-  declarations: [TabsPage]
+  declarations: [eliminarPage]
 })
-export class TabsPageModule {}
+export class eliminarPageModule {}

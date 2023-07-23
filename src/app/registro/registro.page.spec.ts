@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { ExploreContainerComponent } from './explore-container.component';
+import { registroPage } from './registro.page';
 
-describe('ExploreContainerComponent', () => {
-  let component: ExploreContainerComponent;
-  let fixture: ComponentFixture<ExploreContainerComponent>;
+describe('registroPage', () => {
+  let component: registroPage;
+  let fixture: ComponentFixture<registroPage>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ExploreContainerComponent],
+      declarations: [registroPage],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(ExploreContainerComponent);
+    fixture = TestBed.createComponent(registroPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

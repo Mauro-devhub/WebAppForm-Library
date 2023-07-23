@@ -1,0 +1,34 @@
+<ion-content>
+  <div class="container">
+    <h1>Registro de Libros</h1>
+    <form [formGroup]="formBooks">
+      <div class="form-group">
+        <label>ISBN:</label>
+        <input [ngClass]="{'active': inputActive, 'deactive': !inputActive }" formControlName="isbn" type="text">
+      </div>
+      <div class="form-group">
+        <label>Título:</label>
+        <input [ngClass]="{'active': inputActive, 'deactive': !inputActive }" formControlName="title" type="text">
+      </div>
+      <div class="form-group">
+        <label>Autor:</label>
+        <input [ngClass]="{'active': inputActive, 'deactive': !inputActive }" formControlName="autor" type="text">
+      </div>
+      <div class="form-group">
+        <label>Categoría:</label>
+        <input [ngClass]="{'active': inputActive, 'deactive': !inputActive }" formControlName="category" type="text">
+      </div>
+      <div class="form-group">
+        <label>Editorial:</label>
+        <input [ngClass]="{'active': inputActive, 'deactive': !inputActive }" formControlName="editorial" type="text">
+      </div>
+      <div class="form-group">
+        <label>Páginas:</label>
+        <input [ngClass]="{'active': inputActive, 'deactive': !inputActive }" formControlName="pages" type="number">
+      </div>
+      <div [class.active]="inputActive" class="form-group">
+        <button (click)="showObjectRegister()">Registrar</button>
+      </div>
+    </form>
+  </div>
+</ion-content>

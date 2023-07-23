@@ -2,20 +2,17 @@ import { IonicModule } from '@ionic/angular';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { busquedaPage } from './busqueda.page';
 
-import { TabsPageRoutingModule } from './tabs-routing.module';
-
-import { TabsPage } from './tabs.page';
-import { RouterModule } from '@angular/router';
+import { busquedaPageRoutingModule } from './busqueda-routing.module';
 
 @NgModule({
   imports: [
     IonicModule,
     CommonModule,
     FormsModule,
-    TabsPageRoutingModule,
-    RouterModule
+    busquedaPageRoutingModule
   ],
-  declarations: [TabsPage]
+  declarations: [busquedaPage]
 })
-export class TabsPageModule {}
+export class busquedaPageModule {}
