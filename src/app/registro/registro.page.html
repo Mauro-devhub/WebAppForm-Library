@@ -1,34 +1,40 @@
 <ion-content>
   <div class="container">
+    <div class="ion-icon">
+      <ion-icon name="layers-outline" />
+    </div>
     <h1>Registro de Libros</h1>
     <form [formGroup]="formBooks">
       <div class="form-group">
         <label>ISBN:</label>
-        <input [ngClass]="{'active': inputActive, 'deactive': !inputActive }" formControlName="isbn" type="text">
+        <input formControlName="isbn" type="text">
       </div>
       <div class="form-group">
         <label>Título:</label>
-        <input [ngClass]="{'active': inputActive, 'deactive': !inputActive }" formControlName="title" type="text">
+        <input formControlName="titulo" type="text">
       </div>
       <div class="form-group">
         <label>Autor:</label>
-        <input [ngClass]="{'active': inputActive, 'deactive': !inputActive }" formControlName="autor" type="text">
+        <input formControlName="autor" type="text">
       </div>
       <div class="form-group">
         <label>Categoría:</label>
-        <input [ngClass]="{'active': inputActive, 'deactive': !inputActive }" formControlName="category" type="text">
+        <input formControlName="categoria" type="text">
       </div>
       <div class="form-group">
         <label>Editorial:</label>
-        <input [ngClass]="{'active': inputActive, 'deactive': !inputActive }" formControlName="editorial" type="text">
+        <input formControlName="editorial" type="text">
       </div>
       <div class="form-group">
         <label>Páginas:</label>
-        <input [ngClass]="{'active': inputActive, 'deactive': !inputActive }" formControlName="pages" type="number">
+        <input formControlName="paginas" type="number">
       </div>
       <div [class.active]="inputActive" class="form-group">
         <button (click)="showObjectRegister()">Registrar</button>
       </div>
     </form>
+  </div>
+  <div class="container-db">
+    <app-table-db [books]="books" />
   </div>
 </ion-content>

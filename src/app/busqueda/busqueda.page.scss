@@ -21,6 +21,10 @@ ion-content {
   padding: $form-padding;
   box-shadow: 4px -2px 43px 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 120px;
 
   h1 {
     font-family: $font-family;
@@ -53,6 +57,12 @@ ion-content {
         color: $secondary-color;
         font-weight: 700;
         letter-spacing: 2px;
+
+        &:hover {
+          transition: 0.5s linear;
+          background: var(--ion-color-soft-gray);
+          color: var(--ion-color-soft-green);
+        }
       }
 
       input[type="number"] {
@@ -69,6 +79,14 @@ ion-content {
       cursor: pointer;
       border-radius: 3px;
       transition: background-color 0.3s;
+
+      &:hover {
+        transition: 0.7s linear;
+        background: var(--ion-color-soft-gray);
+        color: var(--ion-color-soft-green);
+        font-size: 18px;
+        font-weight: 700;
+      }
     }
   }
 }

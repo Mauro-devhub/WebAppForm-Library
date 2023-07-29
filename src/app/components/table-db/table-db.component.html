@@ -1,0 +1,41 @@
+<section>
+  <table>
+    <thead>
+      <div>
+        <td>ID</td>
+        <td *ngIf="book" >{{ book.ID }}</td>
+        <td *ngFor="let book of books">{{ book.ID }}</td>
+      </div>
+      <div>
+        <td>ISBN</td>
+        <td *ngIf="book" >{{ book.ISBN }}</td>
+        <td *ngFor="let book of books">{{ book.ISBN }}</td>
+      </div>
+      <div>
+        <td>Titulo</td>
+        <td *ngIf="book" >{{ book.Titulo }}</td>
+        <td *ngFor="let book of books">{{ book.Titulo }}</td>
+      </div>
+      <div>
+        <td>Autor</td>
+        <td *ngIf="book" >{{ book.Autor }}</td>
+        <td *ngFor="let book of books">{{ book.Autor }}</td>
+      </div>
+      <div>
+        <td>Categoria</td>
+        <td *ngIf="book" >{{ book.Categoria }}</td>
+        <td *ngFor="let book of books">{{ book.Categoria }}</td>
+      </div>
+      <div>
+        <td>Editorial</td>
+        <td *ngIf="book" >{{ book.Editorial }}</td>
+        <td *ngFor="let book of books">{{ book.Editorial }}</td>
+      </div>
+      <div>
+        <td>Páginas</td>
+        <td *ngIf="book" >{{ book.Paginas }}</td>
+        <td *ngFor="let book of books">{{ book.Paginas }}</td>
+      </div>
+    </thead>
+  </table>
+</section>
